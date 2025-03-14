@@ -1,0 +1,15 @@
+
+    client.focused          #D4B29B #D4B29B #5A4A42 
+    client.focused_inactive #E4D4C2 #F1E4D3 #5A4A42
+    client.unfocused        #E4D4C2 #F1E4D3 #5A4A42
+    bar {
+        position top 
+        mode dock 
+        status_command while ~/.config/sway/status.sh; do sleep 1; done
+        colors {
+            statusline #5A4A42
+            background #F1E4D3
+            inactive_workspace #E4D4C2 #F1E4D3 #5A4A42
+            focused_workspace #D4B29B #5A4A42 #F1E4D3
+        }
+    }
